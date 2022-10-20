@@ -8,3 +8,9 @@ class TooLittleAmount(Exception):
     def __init__(self, amount: str):
         message = f"Amount {amount} is too small!"
         super().__init__(message)
+
+
+class UnknownUser(Exception):
+    def __init__(self, user: str):
+        message = f"User {user} is not known!"
+        super().__init__(message)
